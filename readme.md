@@ -344,9 +344,11 @@ $ kubectl scale --replicas=8 replicaset aplicacao-rs
 ```
 
 ### Prática rc & rs
-Aqui vamos praticar os conceitos vistos anteriormente de replicatio controller & replica set
+Aqui vamos praticar os conceitos vistos anteriormente:
+- **replication controller**
+- **replica set**
 
-Alguns comandos úteis:
+Comandos de apoio:
 ```sh
 $ kubectl create -f arquivo.yaml
 $ kubectl get replicaset
