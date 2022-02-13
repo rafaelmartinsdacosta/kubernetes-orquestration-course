@@ -16,10 +16,9 @@ Assim como o Kubernetes existem outras ferramentas semelhantes no mercado como:
 **Guia para estudo**
 - Leitura natural (cima p/ baixo)
 - Sempre que encontrar um link:
-  - Abre em uma nova aba
-  - Estude o conteúdo de referência
-    - Ele servirá de apoio para o próximo tópico
-  - Siga a leitura
+  - Abra o link por uma nova aba
+  - Estude-o pois será base para os próximos assuntos
+  - Ao retornar, siga a leitura
 
 ## Dicionários de palavras
 [Lista das principais palavras](./docs/dictionary.md) encontradas no curso.
