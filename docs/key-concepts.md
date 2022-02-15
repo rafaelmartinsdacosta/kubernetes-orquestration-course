@@ -102,16 +102,16 @@ Um arquivo de definição do Kubernetes é escrito na linguagem YAML e tem 4 ní
 ### Prática YAML
 Nessa sessão vamos detalhar na prática a criação de um recurso utilizando o yaml.
 
-[Aqui](./examples/nginx.yaml) temos um arquivo yaml de exemplo que podemos utilizar de modelo para criar nossos pods.
+[Aqui](./pods/nginx.yaml) temos um arquivo yaml de exemplo que podemos utilizar de modelo para criar nossos pods.
 
 
 Criando pod a partir de um arquivo yaml.
 ```sh
-$ kubectl create -f ./examples/pod.yaml
+$ kubectl create -f ./pods/nginx.yaml
 ```
 ou
 ```sh
-$ kubectl apply -f ./examples/pod.yaml
+$ kubectl apply -f ./pods/nginx.yaml
 ```
 
 **Obs.:** O `create` e `apply` tem o mesmo efeito.
@@ -145,13 +145,13 @@ spec:
           image: nginx
   replica: 2
 ```
-Perceba que o conteúdo do elemento `template:` é basicamente a definição de um arquivo yaml de um [pod](./examples/nginx.yaml)
+Perceba que o conteúdo do elemento `template:` é basicamente a definição de um arquivo yaml de um [pod](./pods/nginx.yaml)
 
 Para o atributo `replica` definimos a quantidade de pods que gostaríamos de manter rodando dentro do cluster.
 
 Abaixo o comando para subir os pods utilizando a definição do **replication controller** (mesmo para subir o pod).
 ```sh
-$ kubectl create -f ./examples/nginx-rc.yaml
+$ kubectl create -f ./pods/nginx-rc.yaml
 ```
 
 ### ReplicaSets
