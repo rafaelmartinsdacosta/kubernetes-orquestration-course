@@ -235,13 +235,44 @@ Aqui vamos praticar os conceitos vistos anteriormente:
 - **replication controller**
 - **replica set**
 
-Comandos de apoio:
+Cria os pods a partir de um arquivo yaml:
 ```sh
 $ kubectl create -f arquivo.yaml
-$ kubectl get replicaset
-$ kubectl delete replicaset nome-do-replicaset
+```
+
+Atualiza os pods pelo yaml
+```sh
 $ kubectl replace -f arquivo.yaml
+```
+
+Escalando sua aplicação com novas replicas
+```sh
 $ kubectl scale --replicas=8 -f arquivo.yaml
+```
+
+Criand seus pods com replicaset
+```sh
+$ kubectl create -f frontend-rs.yaml
+```
+
+Listando replicaset
+```sh
+$ kubectl get replicaset
+```
+
+Exibindo os detalhes da criação de um replicaset
+```sh
+$ kubectl describe replicaset frontend-rs
+```
+
+Apagando uma replicaset
+```sh
+$ kubectl delete replicaset frontend-rs
+```
+
+Escalando a quantidade de pods de um replicaset
+```sh
+$ kubectl scale replicaset frontend-rs --replicas=3
 ```
 
 ### Deployments
